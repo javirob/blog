@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Auth::routes();
+// Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -32,4 +32,4 @@ Route::get('/services', [PagesController::class, 'services']);
 Route::resource('posts', PostsController::class);
 
 
-// Auth::routes(['register' => false]);
+Auth::routes(['register' => false]);
